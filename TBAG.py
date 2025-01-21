@@ -120,6 +120,14 @@ class Character:
         print(self.name + " doesn't want to fight with you")
         return True
 
+#Add a Character to a Room
+
+dave = Character("Dave", "A friendly but mysterious figure.")
+dave.set_conversation("Hello traveler, be careful in the ballroom!")
+
+dining_hall.describe()
+dave.describe()
+dave.talk()
 
 # Link rooms
 kitchen.link_room(dining_hall, "south")
