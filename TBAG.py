@@ -76,6 +76,25 @@ while True:
     command = input("Which direction do you want to go? ")
     current_room = current_room.move(command)
 
+#Define an Item Class
+
+class Item:
+    def __init__(self):
+        self.name = None
+        self.description = None
+
+    def get_name(self):
+        return self.name
+
+    def set_name(self, item_name):
+        self.name = item_name
+
+    def get_description(self):
+        return self.description
+
+    def set_description(self, item_description):
+        self.description = item_description
+
 
 # Link rooms
 kitchen.link_room(dining_hall, "south")
