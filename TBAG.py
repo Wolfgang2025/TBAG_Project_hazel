@@ -95,6 +95,31 @@ class Item:
     def set_description(self, item_description):
         self.description = item_description
 
+#Define a Character Class
+
+class Character:
+    def __init__(self, char_name, char_description):
+        self.name = char_name
+        self.description = char_description
+        self.conversation = None
+
+    def describe(self):
+        print(self.name + " is here!")
+        print(self.description)
+
+    def set_conversation(self, conversation):
+        self.conversation = conversation
+
+    def talk(self):
+        if self.conversation is not None:
+            print("[" + self.name + " says]: " + self.conversation)
+        else:
+            print(self.name + " doesn't want to talk to you")
+
+    def fight(self, combat_item):
+        print(self.name + " doesn't want to fight with you")
+        return True
+
 
 # Link rooms
 kitchen.link_room(dining_hall, "south")
