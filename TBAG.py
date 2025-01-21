@@ -76,22 +76,6 @@ while True:
     command = input("Which direction do you want to go? ")
     current_room = current_room.move(command)
 
-current_room = dining_hall
-while True:
-    print("\n")
-    print(f"You are in the {current_room.get_name()}")
-    print(current_room.get_description())
-    command = input("Which direction do you want to go? ")
-    current_room = current_room.move(command)
-
-current_room = ballroom
-while True:
-    print("\n")
-    print(f"You are in the {current_room.get_name()}")
-    print(current_room.get_description())
-    command = input("Which direction do you want to go? ")
-    current_room = current_room.move(command)
-
 #Define an Item Class
 
 class Item:
