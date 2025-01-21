@@ -151,14 +151,20 @@ dining_hall.link_room(kitchen, "north")
 dining_hall.link_room(ballroom, "west")
 ballroom.link_room(dining_hall, "east")
 
-
-living_room = Room("Living Room")
-living_room.set_description("a cozy place to relax with a fireplace.")
-living_room.describe()
-
 # Step 3: Add another room instance
+
+#Getters and setters are used to access and modify the properties of an object.
+
 kitchen = Room("Kitchen")
 kitchen.set_description("a place with modern appliances and delicious smells.")
+kitchen.describe()
+
+dining_hall = Room("Dining Hall")
+dining_hall.set_description("A grand hall with a long wooden table.")
+kitchen.describe()
+
+ballroom = Room("Ballroom")
+ballroom.set_description("A vast room with a shiny wooden floor.")
 kitchen.describe()
 
 # Step 4: Print the room names
