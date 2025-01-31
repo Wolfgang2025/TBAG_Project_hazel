@@ -1,0 +1,7 @@
+class Enemy(Character):
+    def __init__(self, name, description):
+        super().__init__(name, description)
+        self.weakness = None
+
+    def set_weakness(self, weakness):
+        self.weakness = weakness

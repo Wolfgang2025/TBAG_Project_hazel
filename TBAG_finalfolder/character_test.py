@@ -40,14 +40,16 @@ dave.set_conversation("Hello there! I am going to join your OOP game very soon")
 dave.talk()
 
 # Set a weakness
-dave.set_weakness("cheese")
 
-# Fight with dave
-print("What will you fight with?")
-fight_with = input()
-dave.fight(fight_with)
+from character import Enemy
 
-#Enemies
+class Enemy(Character):
+    def __init__(self, name, description):
+        super().__init__(name, description)
+        self.weakness = None
+
+    def set_weakness(self, weakness):
+        self.weakness = weakness
 
 dave = Enemy("Dave", "A smelly zombie")
 dave.set_weakness("cheese")
@@ -60,4 +62,42 @@ chuckie.set_weakness("water")
 
 harley = Enemy("Harley", "A creepy clown")
 harley.set_weakness("fire")
+
+# Fight with dave
+print("What will you fight with?")
+fight_with = input()
+dave.fight(fight_with)
+
+# Fight with karen
+print("What will you fight with?")
+fight_with = input()
+karen.fight(fight_with)
+
+# Fight with chuckie
+
+print("What will you fight with?")
+fight_with = input()
+chuckie.fight(fight_with)
+
+# Fight with harley
+print("What will you fight with?")
+
+fight_with = input()
+harley.fight(fight_with)
+
+# Fight with dave again
+print("What will you fight with?")
+fight_with = input()
+dave.fight(fight_with)
+
+# Fight with karen again
+print("What will you fight with?")
+
+fight_with = input()   
+karen.fight(fight_with)
+
+# Fight with chuckie again
+print("What will you fight with?")
+fight_with = input()
+chuckie.fight(fight_with)
 

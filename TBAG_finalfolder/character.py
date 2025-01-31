@@ -27,7 +27,6 @@ class Character:
         """Fight with the character."""
         print(self.name + " doesn't want to fight with you")
         return True
-
    
 #Creating an Enemy class as a subclass of Character
 class Enemy(Character):

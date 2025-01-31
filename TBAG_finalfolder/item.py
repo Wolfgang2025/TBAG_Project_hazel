@@ -21,10 +21,17 @@ class Item:
             print("No description available.")
 
 # Creating items
+
 sword = Item("Sword")
 spyglass = Item("Spyglass")
 potion= Item("Potion")
 magic_ring = Item("Magic Ring")
+
+# Getting descriptions
+sword.describe()
+spyglass.describe()
+potion.describe()
+magic_ring.describe()
 
 # Setting descriptions
 sword.set_description("A sharp sword with a golden hilt.")
