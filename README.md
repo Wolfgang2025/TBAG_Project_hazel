@@ -14,7 +14,7 @@ Welcome to the **Text-Based Adventure Game**! This is an interactive story-drive
 - **Dynamic Events** – Enter different rooms, encounter different characters and/or enemies.
 - **Replayability** – Different choices lead to different endings.
 
-## 🛠️ Installation
+## Installation
 
 ### Clone the Repository
 
